@@ -21,7 +21,7 @@ CREATE TABLE `sales`.`goods`  (
 );
 
 -- 订单表
-CREATE TABLE `dsales`.`order_info`  (
+CREATE TABLE `sales`.`order_info`  (
   `order_id` varchar(50) NOT NULL COMMENT '订单ID',
   `order_number` int NULL COMMENT '订单编号',
   `buyer_id` varchar(50) NULL COMMENT '买家ID',
@@ -36,7 +36,7 @@ CREATE TABLE `dsales`.`order_info`  (
 );
 
 -- 订单明细
-CREATE TABLE `dsales`.`order_detail`  (
+CREATE TABLE `sales`.`order_detail`  (
   `item_id` varchar(50) NOT NULL COMMENT '订单明细ID',
   `order_id` varchar(50) NULL COMMENT '订单ID',
   `buyer_id` varchar(50) NULL COMMENT '买家ID',
